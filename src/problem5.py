@@ -3,9 +3,9 @@ Exam 3, problem 5.
 
 Authors: Vibha Alangar, Aaron Wilkin, David Mutchler, Dave Fisher, 
          Matt Boutell, Amanda Stouder, their colleagues and 
-         PUT_YOUR_NAME_HERE.  January 2019.
+         Haley Braker.  January 2019.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -148,6 +148,13 @@ def problem5(seq_of_seq):
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    for k in range(len(seq_of_seq)):
+        new_list = []
+        sequence = seq_of_seq[k]
+        for j in range(len(sequence)):
+            if seq_of_seq[j] > seq_of_seq[0]:
+                new_list = new_list + [sequence[j]]
+        return new_list
 
 
 ###############################################################################

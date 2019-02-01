@@ -3,9 +3,9 @@ Exam 3, problem 4.
 
 Authors: Vibha Alangar, Aaron Wilkin, David Mutchler, Dave Fisher, 
          Matt Boutell, Amanda Stouder, their colleagues and 
-         PUT_YOUR_NAME_HERE.  January 2019.
+         Haley Braker.  January 2019.
          
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -275,6 +275,15 @@ def problem4(seq_of_seq, n):
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    count = []
+    for k in range(len(seq_of_seq)):
+        sublist = seq_of_seq[k]
+        for j in range(len(sublist)):
+            if sublist[j] > n & is_prime(sublist[j]) is True:
+                count = sublist[j]
+            else:
+                count = -1
+        return count
 
 
 ###############################################################################
